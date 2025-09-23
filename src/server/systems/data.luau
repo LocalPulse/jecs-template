@@ -40,6 +40,15 @@ local function setUserId(world, entity, data)
 	DataHelper.WriteData(world, entity, "PlayerId", player.UserId)
 end
 
+local function setupPlayer(world, entity, document, player)
+	world:set(entity, Components.Loaded, true)
+	world:set(entity, Components.PlayerDocument, document)
+	world:set(entity, ReplicationComponents.PlayerData, document.data)
+
+	DataJoinRemote:FireClient(player, document.data)
+	setUserId(world, entity, document.data)
+end
+
 --[[ Private Variables ]]
 local collection = createCollection()
 
@@ -53,17 +62,12 @@ local function playerData(world: Jecs.World)
 		collection
 			:load(`Player{player.UserId}`, { player.UserId })
 			:andThen(function(document)
-				if player.Parent == nil then
+				if not player.Parent then
 					document:close():catch(warn)
 					return
 				end
 				documents[player] = document
-				world:set(entity, Components.Loaded, true)
-				world:set(entity, Components.PlayerDocument, document)
-				world:set(entity, ReplicationComponents.PlayerData, document.data)
-
-				DataJoinRemote:FireClient(player, document.data)
-				setUserId(world, entity, document.data)
+				setupPlayer(world, entity, document, player)
 			end)
 			:catch(function(message)
 				warn(`Player {player.Name}'s data failed to load: {message}`)
@@ -78,10 +82,12 @@ local function playerData(world: Jecs.World)
 		end
 
 		local document = documents[player]
-		if document then
-			document:close():catch(warn)
-			documents[player] = nil
+		if not document then
+			return
 		end
+
+		document:close():catch(warn)
+		documents[player] = nil
 		entityToPlayer[entity] = nil
 	end)
 
@@ -99,10 +105,12 @@ local function playerData(world: Jecs.World)
 		end
 
 		local document = documents[player]
-		if document then
-			document.data = value
-			document:save():await()
+		if not document then
+			return
 		end
+
+		document.data = value
+		document:save():await()
 	end)
 end
 
