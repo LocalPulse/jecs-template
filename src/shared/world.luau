@@ -1,5 +1,4 @@
 local Jecs = require(game.ReplicatedStorage.Packages.Jecs)
-require(game.ReplicatedStorage.Packages.Replecs)
 
 local World = Jecs.World
 
