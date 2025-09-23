@@ -1,0 +1,4 @@
+[tools]
+wally-package-types = "JohnnyMorganz/wally-package-types@1.4.2"
+tarmac = "rojo-rbx/tarmac@0.7.5"
+darklua = "seaofvoices/darklua@0.14.0"

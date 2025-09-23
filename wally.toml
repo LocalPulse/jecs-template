@@ -1,0 +1,30 @@
+[package]
+name = "vitalimichalov/protect-from-brainrot"
+version = "0.1.0"
+registry = "https://github.com/UpliftGames/wally-index"
+realm = "shared"
+
+[dependencies]
+Jecs = "ukendio/jecs@0.9.0"
+Planck = "yetanotherclown/planck@0.2.0-rc.2"
+Jabby = "alicesaidhi/jabby@0.4.0"
+PlanckJabby = "yetanotherclown/planck-jabby@0.2.0-rc.1"
+PlanckRunService = "yetanotherclown/planck-runservice@0.2.0-rc.1"
+MatterHooks = "yetanotherclown/planck-matter-hooks@0.2.0-rc.1"
+Charm = "littensy/charm@0.10.0"
+Charm-Sync = "littensy/charm-sync@0.3.0"
+Replecs = "pepeeltoro41/replecs@0.0.2"
+React = "jsdotlua/react@17.2.1"
+React-roblox = "jsdotlua/react-roblox@17.2.1"
+React-charm = "littensy/react-charm@0.3.0"
+Ripple = "littensy/ripple@0.9.3"
+UI-Labs = "pepeeltoro41/ui-labs@2.3.8"
+Sift = "csqrl/sift@0.0.11"
+t = "osyrisrblx/t@3.1.1"
+Loader = "sleitnick/loader@2.0.0"
+
+[server-dependencies]
+lapis = "nezuo/lapis@0.3.4"
+
+[place]
+shared-packages = "game.ReplicatedStorage.Packages"
