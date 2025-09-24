@@ -23,7 +23,6 @@ local function setup(world: Jecs.World)
 		local prevData = world:get(entity, ReplicationComponents.PlayerData)
 		local nextData = Patcher.apply(prevData, patch)
 		world:set(entity, ReplicationComponents.PlayerData, nextData)
-		print(world:get(entity, ReplicationComponents.PlayerData))
 	end)
 end
 

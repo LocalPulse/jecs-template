@@ -28,8 +28,8 @@ function ChangeHelper.Setup(world: types.World, components: { types.Entity })
 			local storage = ChangeHelper.Storage[component]
 			local prevStorage = ChangeHelper.Previous[component]
 
-			prevStorage[entity] = storage[entity]
-			storage[entity] = "jecs.Remove"
+			prevStorage[entity] = nil
+			storage[entity] = nil
 		end)
 	end
 end

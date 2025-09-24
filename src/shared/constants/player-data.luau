@@ -13,9 +13,6 @@ local StartData = {
 	RobuxSpend = 0,
 }
 
-export type DataType = typeof(StartData)
-export type DataKeysType = keyof<DataType>
-
 return {
 	Schema = StartDataSchema,
 	StartData = StartData,
