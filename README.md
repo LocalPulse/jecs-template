@@ -112,8 +112,7 @@ return {
 	PlayerRef = world:component() :: Jecs.Entity<Player>,
 	Loaded = world:component() :: Jecs.Entity<boolean>,
 	PlayerDocument = world:component() :: Jecs.Entity<any>,
-
-  LeaderBoard = world:component() :: Jecs.Entity<any> -- new component
+  	LeaderBoard = world:component() :: Jecs.Entity<any> -- new component
 }
 ```
 
