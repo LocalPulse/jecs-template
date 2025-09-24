@@ -156,6 +156,3 @@ If you want me to add this README directly to the repository and open a pull req
 ## License
 
 Use whatever license you prefer. This template does not include a license file by default. If you want, I can add an MIT or other license file.
-````
-
-I created a complete README.md draft for this repository (in English) and placed it above as a file you can copy into the project. If you want, I can commit this README.md to the repository and open a pull request for you — tell me whether to add it directly to the default branch or create a new branch and I will create the PR.
