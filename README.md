@@ -58,9 +58,9 @@ Install Wally and Rojo following their official docs for your platform. If you d
    ```bash
    rokit add rojo-rbx/rojo (I don't use it's)
    rokit install
+   wally install
    rojo sourcemap default.project.json -o sourcemap.json
    wally-package-types --sourcemap sourcemap.json Packages
-   wally install
    ```
 
 3. Start a file sync tool to push code to Roblox Studio:
