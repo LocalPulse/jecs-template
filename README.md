@@ -10,7 +10,7 @@ This README explains how to set up, install dependencies, and a suggested projec
 A selection of useful libraries and tools for Roblox/Luau development:
 
 - **[Jecs](https://ukendio.github.io/jecs/):** A high-performance ECS library for Roblox (Luau) with archetypes, type safety, and first-class entity relationships.
-- **[Jabby](https://alicesaidhi.github.io/jabby/):** A minimal visual tool for debugging and inspecting Jecs worlds.
+- **[Jabby](https://alicesaidhi.github.io/jabby/):** A minimal visual tool for debugging and inspecting Jecs worlds. (F4 to open menu in game)
 - **[Planck](https://github.com/YetAnotherClown/planck):** A lightweight ECS scheduler for managing phases and system execution order, agnostic of the underlying ECS implementation.
 - **[React (Roact)](https://roblox.github.io/roact-alignment/):** A declarative UI framework for Roblox inspired by React, supporting components, hooks, and modular UI composition.
 - **[Charm](https://github.com/littensy/charm):** A modern state management library for Roblox built on atomic, immutable state
@@ -32,6 +32,8 @@ This repository is a template. It includes:
 - src/ — place your Luau source files here
 
 Use this template as a starting point for small ECS-style games or experiments in Luau on Roblox. It does not impose a particular ECS library — adapt it to the ECS implementation you prefer.
+
+**PRESS F4 ON YOUR KEYBOARD TO OPEN JABBY menu.**
 
 ---
 
@@ -68,7 +70,7 @@ Install Wally and Rojo following their official docs for your platform. If you d
      rojo serve
      ```
 
-4. Open Roblox Studio and connect to the running Rojo server.
+4. Open Roblox Studio and connect to the running Rojo server. Press F4 on your keyboard to open Jabby menu.
 
 ---
 
@@ -141,6 +143,8 @@ return {
 	phase = Planck.Phase.PostStartup, --It's phase load. Check documentation Planck.
 }
 ```
+
+**To check entities, components and systems, press F4 to open Jabby.**
 
 ---
 
