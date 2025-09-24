@@ -10,7 +10,7 @@ This README explains how to set up, install dependencies, and a suggested projec
 A selection of useful libraries and tools for Roblox/Luau development:
 
 - **[Jecs](https://ukendio.github.io/jecs/):** A high-performance ECS library for Roblox (Luau) with archetypes, type safety, and first-class entity relationships.
-- **[Jabby](https://alicesaidhi.github.io/jabby/):** A minimal visual tool for debugging and inspecting Jecs worlds. (F4 to open menu in game)
+- **[Jabby](https://alicesaidhi.github.io/jabby/):** A minimal visual tool for debugging and inspecting Jecs worlds. **(F4 TO OPEN MENU IN GAME)**
 - **[Planck](https://github.com/YetAnotherClown/planck):** A lightweight ECS scheduler for managing phases and system execution order, agnostic of the underlying ECS implementation.
 - **[React (Roact)](https://roblox.github.io/roact-alignment/):** A declarative UI framework for Roblox inspired by React, supporting components, hooks, and modular UI composition.
 - **[Charm](https://github.com/littensy/charm):** A modern state management library for Roblox built on atomic, immutable state
