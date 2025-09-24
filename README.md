@@ -56,7 +56,7 @@ Install Wally and Rojo following their official docs for your platform. If you d
 
 2. Install dependencies with Wally (if you use Wally):
    ```bash
-   rokit add rojo-rbx/rojo (I don't it's)
+   rokit add rojo-rbx/rojo (I don't use it's)
    rokit install
    rojo sourcemap default.project.json -o sourcemap.json
    wally-package-types --sourcemap sourcemap.json Packages
