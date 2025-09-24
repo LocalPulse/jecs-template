@@ -40,9 +40,9 @@ Use this template as a starting point for small ECS-style games or experiments i
 - Roblox Studio (to run and test your game)
 - Git (to clone the repo)
 - Wally (recommended) — Luau package manager used by many Roblox developers
-- Rojo or RoKit (optional) — for syncing local files into Roblox Studio
+- Rojo — for syncing local files into Roblox Studio
 
-Install Wally and Rojo/RoKit following their official docs for your platform. If you don't use Wally, you can still place packages into `src/` manually.
+Install Wally and Rojo following their official docs for your platform. If you don't use Wally, you can still place packages into `src/` manually.
 
 ---
 
