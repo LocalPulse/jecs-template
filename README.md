@@ -17,7 +17,7 @@ A selection of useful libraries and tools for Roblox/Luau development:
 - **[Ripple](https://github.com/littensy/ripple):** A lightweight animation library for Roblox.
 - **[UI-Labs](https://ui-labs.luau.page/):** Storybook plugin for Roblox
 - **[t](https://github.com/osyrisrblx/t):** Runtime type checking library for Luau – helps catch bugs early.
-- **[Lapis](https://github.com/nezuo/lapis):** Playerdata libary with validation.
+- **[Lapis](https://github.com/nezuo/lapis):** A lightweight library for managing and validating player data in Roblox.
 
 
 ---
@@ -27,7 +27,7 @@ A selection of useful libraries and tools for Roblox/Luau development:
 This repository is a template. It includes:
 
 - wally.toml — Wally dependency configuration
-- rokit.toml — configuration for RoKit (if you use RoKit)
+- rokit.toml — configuration for RoKit
 - default.project.json — example/default project settings
 - src/ — place your Luau source files here
 
