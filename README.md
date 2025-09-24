@@ -3,6 +3,8 @@ A minimal Luau (Roblox) project template intended to help you start a small ECS-
 
 This README explains how to set up, install dependencies, and a suggested project structure and usage patterns.
 
+---
+
 ## Packages
 
 A selection of useful libraries and tools for Roblox/Luau development:
