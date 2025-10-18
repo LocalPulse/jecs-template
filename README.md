@@ -160,4 +160,4 @@ If you want me to add this README directly to the repository and open a pull req
 
 ## License
 
-Use whatever license you prefer. This template does not include a license file by default. If you want, I can add an MIT or other license file.
+Use whatever license you prefer. This template does not include a license file by default. If you want, I can add an MIT or other license file
